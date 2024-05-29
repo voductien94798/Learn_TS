@@ -12,7 +12,7 @@ const bob: Student = {
 };
 function findStudent(studentList: Student[], studentId: String) {
   if (studentList.length === 0) {
-    return undefined;
+    return 1;
   }
   studentList.find((x) => x.age);
 }
