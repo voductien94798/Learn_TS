@@ -3,6 +3,12 @@
 //có các kiểu dữ liệu khác như: any, unknown, void, never
 //literal types là chỉ định một giá trị cụ thể làm kiểu dữ liệu
 let count2: 1;
+//type assertion ép kiểu dữ liệu
+function getStudent(state: 'active') {
+  console.log(state);
+}
+let s = 'active';
+getStudent(s as 'active');
 //any
 let count1: any = 5;
 count1 = 'five';
